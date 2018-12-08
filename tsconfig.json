@@ -3,6 +3,7 @@
     /* Basic Options */
     "module": "commonjs",
     "lib": ["es2018", "dom"],
+    // "types": ["reflect-metadata", "chrome"], // If put types then all the types need to be specified
     "target": "es6",
     "sourceMap": false,
     "rootDir": "src",

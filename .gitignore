@@ -1,0 +1,60 @@
+######################
+# Project Specific
+######################
+/target/**
+dist/
+/src/test/javascript/coverage/
+/src/test/javascript/PhantomJS*/
+
+######################
+# Node
+######################
+/node/
+node_tmp/
+node_modules/
+npm-debug.log.*
+
+######################
+# SASS
+######################
+.sass-cache/
+
+######################
+# Windows
+######################
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+
+######################
+# Mac OSX
+######################
+.DS_Store
+.svn
+# Thumbnails
+._*
+
+######################
+# Logs
+######################
+*.log
+
+######################
+# IDE
+######################
+.vscode/
+.idea/
+
+######################
+# Others
+######################
+*.class
+*.*~
+*~
+.merge_file*
+
+######################
+# Jest Test Runner
+######################
+coverage/

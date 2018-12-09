@@ -1,8 +1,9 @@
 import HttpHeader = chrome.webRequest.HttpHeader;
 import { ILogger } from "../interfaces/logger.interface";
-import { inject } from "inversify";
+import { inject, injectable } from "inversify";
 import { TYPES } from "../interfaces/types";
 
+@injectable()
 export class HttpService {
 
   private logger: ILogger;

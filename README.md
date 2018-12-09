@@ -8,6 +8,12 @@
 * Collect metrics and errors
 * Less surprises in production
 
+## Features
+* Uses inversify for dependency injection which makes the code testable
+* Different webpack config for dev and prod
+* For writing tests, jest is being used
+* Basic APIs implemented: Logger, LocalStorage
+
 ## TODO
 * Add tslint and prettier
 * Watch mode so that automatically builds in case of changes

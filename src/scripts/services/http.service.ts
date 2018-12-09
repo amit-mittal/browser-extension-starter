@@ -9,9 +9,9 @@ export class HttpService {
   private logger: ILogger;
 
   public constructor(
-    @inject(TYPES.ILogger) chromeLogger: ILogger
+    @inject(TYPES.ILogger) logger: ILogger
   ) {
-    this.logger = chromeLogger;
+    this.logger = logger;
   }
 
   post(url: string, headers?: HttpHeader[], body?: Object): Promise<any> {

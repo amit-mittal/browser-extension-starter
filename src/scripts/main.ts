@@ -1,8 +1,8 @@
 import { myContainer } from "./services/chrome/chrome-container";
 import { TYPES } from "./interfaces/types";
 import { ILogger } from "./interfaces/logger.interface";
-// import { HttpService } from "./services/http.service";
 import { ILocalStorage } from "./interfaces/local-storage.interface";
+import { ApiService } from "./services/api.serive";
 
 const logger = myContainer.get<ILogger>(TYPES.ILogger);
 logger.info("Hello World!!");
@@ -22,5 +22,5 @@ localStorage.get<string>("key2").then(result => {
   logger.error(error);
 })
 
-// const httpService = myContainer.get<HttpService>(TYPES.HttpService);
-// httpService.get("http://google.com")
+const apiService = myContainer.get<ApiService>(TYPES.ApiService);
+apiService.getApiCall();

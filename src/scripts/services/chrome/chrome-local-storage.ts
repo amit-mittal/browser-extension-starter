@@ -1,12 +1,11 @@
-import { ILocalStorage } from "../../interfaces/local-storage.interface";
 import { injectable } from "inversify";
+import { ILocalStorage } from "../../interfaces/local-storage.interface";
 
 @injectable()
 export class ChromeLocalStorage implements ILocalStorage {
-
-  get<T>(key: string): Promise<T> {
-    return new Promise(function(resolve, reject) {
-      chrome.storage.local.get([key], function(result: any) {
+  public get<T>(key: string): Promise<T> {
+    return new Promise((resolve, reject) => {
+      chrome.storage.local.get([key], (result: any) => {
         if (result[key]) {
           resolve(result);
         } else {
@@ -16,7 +15,7 @@ export class ChromeLocalStorage implements ILocalStorage {
     });
   }
 
-  set<T>(key: string, value: T): void {
-    chrome.storage.local.set({[key]: value});
+  public set<T>(key: string, value: T): void {
+    chrome.storage.local.set({ [key]: value });
   }
 }

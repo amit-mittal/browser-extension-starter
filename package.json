@@ -16,10 +16,12 @@
   "dependencies": {},
   "devDependencies": {
     "@types/chrome": "0.0.74",
+    "@types/firefox-webext-browser": "^64.0.0",
     "@types/jest": "23.3.8",
     "copy-webpack-plugin": "4.5.3",
     "inversify": "^5.0.1",
     "jest": "23.6.0",
+    "npm": "^6.4.1",
     "reflect-metadata": "^0.1.12",
     "replace-in-file-webpack-plugin": "^1.0.6",
     "terser-webpack-plugin": "1.1.0",

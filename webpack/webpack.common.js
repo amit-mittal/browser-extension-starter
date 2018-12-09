@@ -28,6 +28,16 @@ module.exports = {
                 test: /\.tsx?$/,    // using typescript loader to convert ts to js at build stage.
                 use: 'ts-loader',
                 exclude: /node_modules/
+            },
+            {
+                test: /\.ts$/,
+                enforce: 'pre',
+                use: [
+                    {
+                        loader: 'tslint-loader',
+                        options: { /* Loader options go here */ }
+                    }
+                ]
             }
         ]
     },

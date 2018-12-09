@@ -15,9 +15,10 @@
 * For writing tests, jest is being used
 * Basic APIs implemented: Logger, LocalStorage
 * Sample backend API service implemented: ApiService
+* TSLint has been added
 
 ## TODO
-* Add tslint and prettier
+* Add prettier
 * Watch mode so that automatically builds in case of changes
 * Setup webpack for generating chrome, firefox extensions
 * Add injectable services which are not specific to chrome, firefox

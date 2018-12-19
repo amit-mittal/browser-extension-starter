@@ -7,7 +7,7 @@ export class ChromeLocalStorage implements ILocalStorage {
     return new Promise((resolve, reject) => {
       chrome.storage.local.get([key], (result: any) => {
         if (result[key]) {
-          resolve(result);
+          resolve(result[key]);
         } else {
           reject(new Error(`${key} not found`));
         }

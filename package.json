@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@sentry/browser": "^4.4.2",
     "@types/chrome": "0.0.74",
     "@types/firefox-webext-browser": "^64.0.0",
     "@types/jest": "23.3.8",

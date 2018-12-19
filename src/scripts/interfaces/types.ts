@@ -1,9 +1,10 @@
 const TYPES = {
-  ILogger: Symbol.for("ILogger"),
-  ILocalStorage: Symbol.for("ILocalStorage"),
-
+  ApiService: Symbol.for("ApiService"),
   HttpService: Symbol.for("HttpService"),
-  ApiService: Symbol.for("ApiService")
+
+  IErrorHandler: Symbol.for("IErrorHandler"),
+  ILocalStorage: Symbol.for("ILocalStorage"),
+  ILogger: Symbol.for("ILogger")
 };
 
 export { TYPES };

@@ -19,10 +19,10 @@
 - Basic APIs implemented: Logger, LocalStorage
 - Sample backend API service implemented: ApiService
 - TSLint and Prettier has been added
+- Watch mode so that automatically builds in case of changes
 
 ## TODO
 
-- Watch mode so that automatically builds in case of changes
 - Setup webpack for generating chrome, firefox extensions
 - Add injectable services which are not specific to chrome, firefox
 - Write tests for the code
@@ -30,3 +30,5 @@
 - Jenkins job which pushes new code with new version to webstore
 - Steps to setup analytics, error collection, A/B testing, metrics collection
 - For extension popup, explore what should be done
+- Configure notifier which tells when project has been built or extension reloaded
+- Add proper documentation
